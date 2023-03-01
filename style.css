@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+}
+
+.join h1 {
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+}
+
+.join h2 {
+    font-size: 1rem;
+    color: hsl(71, 73%, 54%);
+}
+
+.join p {
+    line-height: 1.5rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.subscription h2{
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.exact-price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price-interval {
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: 0;
+    padding: 1rem 0;
+    width: 100%;
+    font-weight: 700;
+    font-family:'Karla', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 63%);
+    color: white;
+}
+
+.why-us h2 {
+    font-size: 1rem;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding-top: 1rem;
+}
+
+.component {
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width:475px) {
+
+.wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 1rem;
+}
+
+.join {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+}
+
